@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -9,9 +11,17 @@ function App() {
       {/* Navbar will go here later */}
       
       <main>
+      {/* Profile and Introduction */}
         <Hero />
+        
+        {/* Technical expertise: Java, Spring Boot, React, etc. */}
         <Skills />
-        {/* We will add <Projects /> and <Skills /> here next */}
+        
+        {/* Featured work: Blood Bank and Personal Journal */}
+        <Projects />
+        
+        {/* Contact info and Social links */}
+        <Contact />
       </main>
 
       {/* Footer will go here later */}
