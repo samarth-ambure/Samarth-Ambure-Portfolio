@@ -3,7 +3,7 @@ import './Contact.css';
 
 function Contact() {
   return (
-    <footer className="contact-section">
+    <footer id="contact" className="contact-section">
       <h2 className="section-title">Get In Touch</h2>
       <div className="contact-info">
         <p>Location: Pune, India</p>

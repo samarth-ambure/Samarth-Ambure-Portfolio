@@ -16,3 +16,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
+:root {
+  scroll-padding-top: 80px; /* Adjust this to match your Navbar's height */
+}
+
+html {
+  scroll-behavior: smooth;
+}

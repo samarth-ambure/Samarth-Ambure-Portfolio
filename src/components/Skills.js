@@ -1,32 +1,42 @@
 import React from 'react';
 import './Skills.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faJava, faReact, faJs, faPython, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faCode } from '@fortawesome/free-solid-svg-icons';
 
 function Skills() {
-  const skillCategories = [
+  const categories = [
     {
-      title: "Backend Development",
-      skills: ["Java", "SpringBoot", "Node.js", "Python"]
+      title: "Backend",
+      skills: [
+        { name: "Java", icon: faJava },
+        { name: "SpringBoot", icon: faCode },
+        { name: "Python", icon: faPython }
+      ]
     },
     {
-      title: "Frontend Development",
-      skills: ["ReactJS", "JavaScript", "HTML/CSS", "Tailwind/Bootstrap"]
-    },
-    {
-      title: "Databases & Tools",
-      skills: ["MySQL", "MongoDB", "GitHub"]
+      title: "Frontend",
+      skills: [
+        { name: "ReactJS", icon: faReact },
+        { name: "JavaScript", icon: faJs },
+        { name: "NodeJS", icon: faNodeJs }
+      ]
     }
   ];
 
   return (
-    <section className="skills-section">
+    <section id="skills" className="skills-section">
       <h2 className="section-title">Technical Skills</h2>
       <div className="skills-container">
-        {skillCategories.map((category, index) => (
-          <div key={index} className="skill-card">
-            <h3>{category.title}</h3>
+        {categories.map((cat, idx) => (
+          <div key={idx} className="skill-card">
+            <h3>{cat.title}</h3>
             <div className="skill-list">
-              {category.skills.map((skill, i) => (
-                <span key={i} className="skill-badge">{skill}</span>
+              {cat.skills.map((skill, i) => (
+                <div key={i} className="skill-item">
+                  <FontAwesomeIcon icon={skill.icon} className="skill-icon" />
+                  <span>{skill.name}</span>
+                </div>
               ))}
             </div>
           </div>

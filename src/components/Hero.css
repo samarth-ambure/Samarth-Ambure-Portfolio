@@ -35,3 +35,22 @@
 .btn-primary:hover {
   background-color: #1d4ed8;
 }
+
+.btn-secondary {
+  display: inline-block;
+  background-color: transparent;
+  color: #60a5fa;
+  padding: 12px 24px;
+  border: 2px solid #60a5fa;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  font-weight: bold;
+  text-decoration: none; /* Removes the underline from the link */
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #60a5fa;
+  color: #0f172a; /* Dark background on hover */
+}

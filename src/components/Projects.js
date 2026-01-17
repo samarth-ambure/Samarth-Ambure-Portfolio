@@ -15,12 +15,12 @@ function Projects() {
       date: "November 2025",
       description: "A desktop journaling app with a robust lock-screen system and file-based password persistence for data privacy.",
       tech: ["Python", "Tkinter", "File Handling"],
-      link: "#" // Add link if available
+      link: "https://github.com/samarth-ambure/My-Personal-Journal" 
     }
   ];
 
   return (
-    <section className="projects-section">
+    <section id="projects" className="projects-section">
       <h2 className="section-title">Featured Projects</h2>
       <div className="projects-grid">
         {projectList.map((project, index) => (
