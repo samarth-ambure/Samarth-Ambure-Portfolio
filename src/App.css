@@ -24,3 +24,22 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* We can add a hamburger menu later if you like */
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-container, .skills-container, .projects-grid {
+    padding: 10px;
+  }
+
+  .skill-card, .project-card {
+    width: 100%; /* Cards take full width on mobile */
+  }
+}
