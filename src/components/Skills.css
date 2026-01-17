@@ -51,3 +51,28 @@
   font-size: 0.9rem;
   font-weight: 500;
 }
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #334155;
+  color: #60a5fa;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 5px;
+}
+
+.skill-icon {
+  font-size: 1.1rem;
+}
+
+/* Ensure the cards wrap nicely on mobile */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}

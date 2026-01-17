@@ -1,25 +1,35 @@
 import React from 'react';
 import './Skills.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJava, faReact, faJs, faPython, faNodeJs } from '@fortawesome/free-brands-svg-icons';
-import { faDatabase, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faJava, faReact, faJs, faPython, faNodeJs, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase, faCode, faMobileScreenButton } from '@fortawesome/free-solid-svg-icons';
 
 function Skills() {
   const categories = [
     {
-      title: "Backend",
+      title: "Backend Development",
       skills: [
         { name: "Java", icon: faJava },
         { name: "SpringBoot", icon: faCode },
-        { name: "Python", icon: faPython }
+        { name: "Python", icon: faPython },
+        { name: "Node.js", icon: faNodeJs }
       ]
     },
     {
-      title: "Frontend",
+      title: "Frontend & Mobile",
       skills: [
         { name: "ReactJS", icon: faReact },
+        { name: "React Native", icon: faMobileScreenButton }, // Added React Native
         { name: "JavaScript", icon: faJs },
-        { name: "NodeJS", icon: faNodeJs }
+        { name: "HTML/CSS", icon: faCode }
+      ]
+    },
+    {
+      title: "Databases & Tools",
+      skills: [
+        { name: "MySQL", icon: faDatabase },
+        { name: "MongoDB", icon: faDatabase },
+        { name: "GitHub", icon: faGithub }
       ]
     }
   ];
