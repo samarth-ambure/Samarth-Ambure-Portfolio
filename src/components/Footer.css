@@ -1,0 +1,30 @@
+.footer {
+  padding: 40px 20px;
+  background-color: #020617; /* Even darker than the body for contrast */
+  border-top: 1px solid #1e293b;
+  color: #94a3b8;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+.footer-socials a {
+  color: #94a3b8;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #60a5fa;
+  transform: translateY(-3px);
+}
