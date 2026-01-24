@@ -4,7 +4,7 @@ import './Projects.css';
 function Projects() {
   const projectList = [
     {
-      title: "Sanjeevne Drops ",
+      title: "Sanjeevne Drops",
       date: "August 2025",
       description: "A full-stack web application built with Spring Boot and React for managing blood inventory and donors. Features RESTful APIs and MySQL integration.",
       tech: ["Java", "Spring Boot", "ReactJS", "MySQL"],
@@ -30,7 +30,14 @@ function Projects() {
       description: "A Python-based desktop application featuring a secure lock-screen system and file-based password persistence for private journaling.",
       tech: ["Python", "Tkinter", "Security"],
       link: "https://github.com/samarth-ambure/My-Personal-Journal"
-    }
+    },
+       {
+      title: "Tasty Tracks: Meal Explorer",
+      date: "January 2026",
+      description: "A dynamic React Native application for discovering recipes. Features complex navigation, category filtering, and detailed meal data presentation.",
+      tech: ["React Native", "React Navigation", "Mobile UI"],
+      link: "https://github.com/samarth-ambure/Tasty-Tracks-React-Native-Meal-Explorer"
+    },
   ];
 
   return (
